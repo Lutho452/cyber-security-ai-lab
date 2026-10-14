@@ -1,0 +1,109 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #020812, #0a1830 60%, #0a1220);
+  color: #edf9ff;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #4fe0ff;
+}
+
+.subtitle {
+  color: #9bb4c9;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.02);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #dffcff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+label {
+  display: block;
+  color: #b5d3e5;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+input[type='range'] {
+  width: 100%;
+  margin: 8px 0 4px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4fe0ff, #7affc1);
+  color: #012529;
+}
+
+button.secondary {
+  background: transparent;
+  color: #dffcff;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.feedback-wrap {
+  margin-top: 20px;
+}
+
+.result-box {
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 10px;
+  padding: 12px;
+  color: #d7efff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 740px) {
+  .layout, .grid {
+    grid-template-columns: 1fr;
+  }
+}
